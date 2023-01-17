@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 0 10px;
+  background-image: linear-gradient( 45deg,  rgba(48,207,208,1) 11.2%, rgba(51,8,103,1) 92.5% );
+}
+.back-btn{
+  display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin: 2% 5% 0% 0%;
+}
+.btn {
+  display: inline-block;
+  background: #fff;
+  color: #033a80;
+  padding: 0.7rem 1.3rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+#splash{
+  width: 12%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  opacity: 1;
+  transition: 10s;
+  top: 0;
+  left:0;
+  justify-content: center;
+  text-align: center;
+}
+.splash-logo{
+  width :100%;
+}
+#splash.fade{
+  opacity: 0;
+}
+::selection {
+  color: #fff;
+}
+
+.content {
+
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+   padding: 20px;
+  border-radius: 7px;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.content .banner{
+  display: flex;
+    flex-direction: row;
+    justify-content: center;  
+}
+
+.content .logo {
+  width: 12%;
+}
+
+.content .header {
+  font-size: 28px;
+  font-weight: 500;
+  text-align: center;  
+  padding-left: 15px;
+}
+
+.content form {
+  margin: 20px 0 20px 0;
+}
+
+form :where(input, select, button) {
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+}
+
+form p {
+  font-size: 17px;
+  margin-bottom: 5px;
+}
+
+.currency-amount {
+  display: flex;
+  flex-direction: column;
+}
+
+form input {
+  height: 50px;
+  font-size: 17px;
+  padding: 0 15px;
+  border: 1.5px solid #033a80;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+form input:focus {
+  padding: 0 14px;
+  border: 1.5px solid #033a80;
+}
+
+form span {
+  font-size: 14px;
+  padding-top: 10px;
+  color: red;
+}
+
+form .country-drop-list {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.country-drop-list .select-section {
+  display: flex;
+  width: 115px;
+  height: 45px;
+  align-items: center;
+  border-radius: 5px;
+  justify-content: center;
+  border: 1.5px solid #033a80;;
+}
+
+.select-section span {
+  padding-top: 0px;
+}
+
+.select-section img {
+  max-width: 21px;
+}
+
+.select-section select {
+  width: auto;
+  font-size: 16px;
+  background: none;
+  margin: 0 -5px 0 5px;
+}
+.select-section select option:hover{background-color:yellow;}
+
+.select-section select::-webkit-scrollbar {
+  width: 8px;
+}
+
+.select-section select::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+.select-section select::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 8px;
+  border-right: 2px solid #ffffff;
+}
+
+.country-drop-list .icon {
+  cursor: pointer;
+  margin-top: 30px;
+  font-size: 22px;
+}
+
+form .exchange-dispaly {
+  font-size: 17px;
+  margin: 20px 0 0px;
+}
+
+form .exchange-date {
+  font-size: 17px;
+  margin: 10px 0 20px;
+}
+
+form button {
+  height: 52px;
+  color: #fff;
+  font-size: 17px;
+  cursor: pointer;
+  background:#033a80;
+  transition: 0.3s ease;
+}
+
+form button:hover {
+  background: #2BBABB;
+}
+
+.last-updated, .amount-limt {
+  font-size: 10px;
+}
+
+@media (max-width: 550px) {
+  .content{
+    margin-bottom: 5%;
+    width: 90%;
+    margin-left: 5%;
+    margin-right:
+     5%;
+  }
+  .back-btn{
+    margin-bottom: 2%;
+  }
+}
+
+@media (max-width: 375px) {
+  form .country-drop-list{
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 450px)  {
+  .content .logo {
+      width: 25%;
+  }
+  }
+  
+ @media (max-width: 1170px) and (min-width: 1000px) {
+ .content .logo {
+  width: 25%;
+}
+}
+
+@media (max-width: 675px) and (min-width: 550px) {
+  .content .logo {
+   width: 25%;
+ }
+ }
+ @media (min-width: 1000px)  {
+  .content{
+    margin-bottom: 2%;
+   width: 34%;
+   margin-left: 33%;
+   margin-right: 33%;
+ }
+ }

@@ -1,0 +1,24 @@
+{
+  "short_name": "Currency Converter",
+  "name": "Currency Converter Application",
+  "start_url": "/",
+  "description":"Currency Converter Application",
+  "background_color": "#033a80",
+  "orientation":"any",
+  "theme_color": "#29B2B7",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "./image/logo_512.png",
+      "type":  "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./image/logo_192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    }
+  ]
+}

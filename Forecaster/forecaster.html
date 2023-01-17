@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#6165f8">
+    <title>ForeCaster</title>
+    <link rel="stylesheet" href="./forecaster.css">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/image/logo_forecaster.png">
+    <!-- FontAweome Link for exchange Icon -->
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+    <div class="back-btn">  <a href="../html/skill.html" class="btn">Back to Profilo</a></div>
+    <div class="chartCard">
+        
+            <div class="cardFilter">
+                <span class="logo"><img class="logo" src="./image/logo_forecaster.png" alt="logo"></span>
+                <!-- Mode Change Section -->
+                <div class="mode">
+                    <div class="text-pd mobile-font">Forecast Mode:</div>
+                    <div>
+                        <label class="switch">
+            <input type="checkbox" checked onclick="modeChange()">
+            <span class="slider round"></span>
+          </label>
+                    </div>
+                </div>
+                <!-- filter fuel Section -->
+                <div class="filter">
+                    <span class="mobile-font">Choose Fuel:</span>
+                    <div class="input-box-wapper">
+                        <div class="box ">
+                            <input type="checkbox" name="check" value="solid" class="checkbox" id="solid" checked>
+                            <label for="solid">Solid Fuel</label>
+                        </div>
+                        <div class="box">
+                            <input type="checkbox" name="check" value="gas" class="checkbox" id="gas" checked>
+                            <label for="gas">Gas</label>
+                        </div>
+                        <div class="box">
+                            <input type="checkbox" name="check" value="electricity" class="checkbox" id="electricity" checked>
+                            <label for="electricity">Electricity</label>
+                        </div>
+                        <div class="box">
+                            <input type="checkbox" name="check" value="liquid" class="checkbox" id="liquid" checked>
+                            <label for="liquid">Liquid Fuel</label>
+                        </div>
+                    </div>
+                </div>
+                <!-- Year Change Section  -->
+                <div class="yearChange removeSection" id="YearSection">
+                    <span class="mobile-font">Select Year:</span>
+                    <form name="forecastForm">
+                    <input name='datepicker' max="2022-08" min="1996-01" value="2022-08" type='month' class='datepicker mobile-font' onchange="dateSelected()" />
+                </form>
+                </div>
+            </div>
+          <!-- Chart Display section -->
+        <div class="chartBox">
+            <canvas id="myChart"></canvas>
+        </div>
+    </div>
+    <!-- javaScript file links -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./js/forecaster-dataset.js"></script>
+    <script src="./js/forecaster.js"></script>
+    <script src="/forecaster-sw.js"></script>
+    <script src="/forcaster-pwa.js"></script>
+</body>
+
+</html>

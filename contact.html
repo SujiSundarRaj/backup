@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#033a80">
+    <title>Suji Sundar Raj Portfolio Website</title>
+    <!-- Link To CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/animation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="manifest" href="/manifest.json">
+        <link rel="apple-touch-icon" href="../image/logo_svg.svg">
+</head>
+
+<body id="home">
+    <!-- Navbar -->
+    <header>
+        <a href="./index.html"> <img src="../image/logo_svg.svg" class="logo" alt="logo"></a>
+        <div class="bx bx-menu" id="menu-icon"><i class="fa fa-bars"></i> </div>
+        <ul class="navbar">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./experience.html">Experience</a></li>
+            <li><a href="./qualification.html">Qualification</a></li>
+            <li><a href="./skill.html">Skills</a></li>
+            <li><a href="./testimonial.html">Testimonial</a></li>
+            <li><a class="current_page_item" href="./contact.html">Contact</a></li>
+        </ul>
+    </header>
+    <!-- Home -->
+    <div class="container">
+    <section class="contact" id="contact-pg">
+        <div class="heading">
+            <h2>Connect With Me</h2>
+        </div>
+        <div class="contact-sec">
+            <div class="contact-address">
+                <h3>Contact Deatils</h3><br>
+                <div><b>Contact Address:</b>
+                    <br>
+                    29 Meir Road,<br>
+                    Normacot,<br>
+                    stock-on-Trent,<br>
+                    Postcode: ST3 7HX
+                </div>
+                <div><b>Contact Number:</b> +44 7721680433</div>
+                <div><b>Email:</b> sujisunderraj@gmail.com</div>
+            </div>
+            <div class="contact-form">
+                <form>
+                    <div class="input-group">
+                        <input type="text" placeholder="Enter your name" id="your-name" onkeyup="validateName()">
+                        <span id="name-requred"></span>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="tel" placeholder="Enter Phone Number" id="your-phone" onkeyup="validatePhone()">
+                        <span id="phone-requred"></span>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="email" placeholder="Enter Email" id="your-email" onkeyup="validateEmail()">
+                        <span id="email-requred"></span>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="text" placeholder="Enter your subject" id="your-subject"
+                            onkeyup="validateSubject()">
+                        <span id="subjectRequred"></span>
+                    </div>
+
+                    <div class="input-group">
+                        <textarea rows="5" placeholder="Enter your message" id="your-message"
+                            onkeyup="validateMessage()"></textarea>
+                        <span id="message-requred"></span>
+                    </div>
+                    <!-- captcha Section -->
+                    <div>
+                        <div class="captchaContainer">
+                            <div class="canvas-sec">
+                                <canvas id="canvas" ></canvas>
+                            </div>
+                            <div class="captchawrapper"><button id="reload-button">
+                                    <i class="fa-solid fa-arrow-rotate-right"></i>
+                                </button></div>
+                        </div>
+                        <div class="input-group">
+                        <input type="text" id="user-input" placeholder="Enter the text in the image"  onkeyup="validateCaptcha()" />
+                        <span id="captcha-requred"></span>
+                    </div>
+                    </div>
+                    <div class="input-group">
+                        <button class="btn contact-button" onclick="return validateSubmit()">Submit</button>
+                        <span id="submit-requred"></span>
+                    </div>
+                </form>
+                </div>
+        </div>
+    </section>
+</div>
+    <!-- Footer -->
+    <!-- Copyright -->
+    <div class="copyright">
+        <p>Create By Suji Sundar Raj | All Right Reserved</p>
+        <p><span>sujisunderraj@gmail.com</span></p>
+    </div>
+    <!-- Link To JS -->
+    <script src="../js/test.js"></script>
+    <script src="/profilo-sw.js"></script>
+    <script src="/profilo-pwa.js"></script>
+</body>
+
+</html>

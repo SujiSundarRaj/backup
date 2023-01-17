@@ -1,0 +1,24 @@
+{
+  "short_name": "Forecaster",
+  "name": "Energy Forecaster",
+  "start_url": "/",
+  "description":"Energy Forecaster",
+  "background_color": "#BFB3FF",
+  "orientation":"any",
+  "theme_color": "#6165f8",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "./image/logo_forecaster_512.png",
+      "type":  "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./image/logo_forecaster_192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    }
+  ]
+}

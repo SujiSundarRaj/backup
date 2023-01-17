@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency Converter App</title>
+  <link rel="stylesheet" href="./currency-converter.css">
+  <meta name="theme-color" content="#29B2B7">
+  <!-- FontAweome Link for exchange Icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="manifest" href="/manifest.json">
+  <link rel="apple-touch-icon" href="/image/logo.png">
+</head>
+
+<body>
+  <!-- <div id="splash">
+    <img class="splash-logo" src="./image/logo.png" alt="splashlogo">
+  </div> -->
+  <div class="container">
+  <div class="back-btn">  <a href="../html/skill.html" class="btn">Back to Profilo</a></div>
+   
+    <div class="content">
+      <div class="banner">
+        <img class="logo" src="./image/logo.png" alt="flag">
+        <div class="header">Currency Converter</div>
+      </div>
+      <form action="#">
+        <p>Enter Amount</p>
+        <div class="currency-amount">
+          <input type="number" value="1" onkeyup="validateAmount()">
+          <span id="valid-amount"></span>
+        </div>
+        <div class="country-drop-list">
+          <div class="from-section">
+            <p>From</p>
+            <div class="select-section">
+              <span id="fromFlagImg">
+                <!-- from flag icon links -->
+                <img src="https://flagcdn.com/w320/us.png" alt="flag">
+              </span>
+              <select>
+                <!-- Options tags are inserted from currency-converter.js -->
+              </select>
+            </div>
+          </div>
+          <div class="icon"><i class="fas fa-exchange-alt" onclick="exchangeAlt()"></i></div>
+          <div class="to-section">
+            <p>To</p>
+            <div class="select-section">
+              <span id="toFlagImg">
+                <!-- to flag icon links -->
+                <img src="https://flagcdn.com/w320/gb.png" alt="flag">
+              </span>
+              <select>
+                <!-- Options tags are inserted from currency-converter.js -->
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="exchange-dispaly"></div>
+        <div class="exchange-date"></div>
+        <button>Get Exchange Rate</button>
+      </form>
+      <div class="last-updated"> </div>
+      <div class="amount-limt">Maximum limt of Exchange amount is 10000000</div>
+    </div>
+  </div>
+  <!-- javaScript file links -->
+  <script src="./js/country-list.js"></script>
+  <script src="./js/currency-converter.js"></script>
+  <script src="/currency-converter-pwa.js"></script>
+  <script src="/currency-converter-sw.js"></script>
+</body>
+
+</html>
